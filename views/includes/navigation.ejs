@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/navigation.css">
+<div>
+          <button>
+              <a class=" btn <%= path === '/admin/entry-product' ? 'active' : '' %>" href="/admin/entry-product">Entry-product</a>
+          </button>
+          <button>
+              <a class="<%= path === '/admin/edit-product' ? 'active' : '' %>" href="/admin/edit-product">Update-product</a>
+          </button>
+          <button>
+                    <a class="<%= path === '/admin/delete-product' ? 'active' : '' %>" href="/admin/delete-product">Delete-product</a>
+               </button>
+               <button class="logout">
+                         <a href="/">Logout</a>
+                    </button>
+          </div>

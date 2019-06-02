@@ -1,0 +1,20 @@
+<%- include('../includes/head.ejs') %>
+
+<body>
+          <main>
+                <%- include('../includes/navigation.ejs') %>
+                <br>
+                    <form action="/admin/deleteProduct" method="POST">
+                         <select class="selectpicker" data-style="btn-info" name="selectpicker">
+                             
+                                  <option value="">Select Product</option>
+                                  <% rows.forEach(function(row){ %>
+                                  <option value="<%= row._id %>"><%= row.name %></option>
+                                  <% }) %>
+                            
+                          </select>
+                          <input type="submit" value="Submit" />
+                    </form>
+               </main>
+
+<%- include('../includes/end.ejs') %>

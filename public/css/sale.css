@@ -1,0 +1,11 @@
+a{
+     text-align: center;
+     font-size: 20px;
+     color: brown;
+}
+a:hover{
+     color: blue
+}
+button{
+     margin-bottom: 20px;
+}

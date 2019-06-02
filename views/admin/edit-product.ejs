@@ -1,0 +1,30 @@
+<%- include('../includes/head.ejs') %>
+
+<body>
+          <main>
+                    <%- include('../includes/navigation.ejs') %>
+                    <br>
+                    <form action="/admin/editProduct" method="POST"> 
+
+                         <select class="selectpicker" data-style="btn-info" name="selectpicker">
+                                   
+                                       <option value="">Select Product</option>
+                                       <% rows.forEach(function(row){ %>
+                                       <option value="<%= row._id %>"><%= row.name %></option>
+                                       <% }) %>
+                                
+                               </select>
+                              
+                         <div>
+                                   <label for="quantity">Product Quantity:</label>
+                                   <input type="text" name="quantity">
+                                   </div>
+                                   <div class="form-control">
+                                   <label for="price">Product Price:</label>
+                                   <input type="text" name="price">
+                              </div>
+                         <button class="btn" type="submit">Submit</button>   
+                    </form>
+               </main>
+
+<%- include('../includes/end.ejs') %>

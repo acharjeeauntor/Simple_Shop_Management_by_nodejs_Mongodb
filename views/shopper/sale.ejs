@@ -1,0 +1,32 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/sale.css">
+<body>
+          <main>
+                    <button class="logout">
+                              <a href="/">Logout</a>
+                         </button>
+                         <br>
+                    <form action="/shopper/invoice" method="POST">
+                         <div class="form-control">
+                         <!-- <label for="name">Product Name:</label>
+                         <input type="text" name="name"> -->
+                         <select class="selectpicker" data-style="btn-info" name="selectpicker">
+                                       <option value="">Select Product</option>
+                                       <% rows.forEach(function(row){ %>
+                                       <option value="<%= row._id %>"><%= row.name %></option>
+                                       <% }) %>
+                               </select>
+                    </div>
+                    <div class="form-control">
+                         <label for="quantity">Product Quantity:</label>
+                         <input type="text" name="quantity">
+                        </div>
+                        <!-- <div class="form-control">
+                         <label for="price">Product Price:</label>
+                         <input type="text" name="price">
+                    </div> -->
+                    <button class="btn" type="submit">Submit</button>
+                    </form>
+               </main>
+
+<%- include('../includes/end.ejs') %>
