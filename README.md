@@ -1,3 +1,12 @@
 # Simple_Shop_Management_by_nodejs_Mongodb
-This is a simple Shop management Project and my first node js project.There i used Express js,Mongodb,ejs Template Engine ,etc .I follow the MVC Pattern in this Project.
+
+Requirements:
+node: v10.15.3
+npm: 6.9.1-next.0
+
+Usage
+Install the package as global
+npm install -g Simple_shop_management
+Run the setup configuration
+npm start
 
